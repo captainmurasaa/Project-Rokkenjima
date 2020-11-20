@@ -87,12 +87,6 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("data/tmp/iconCache.sav")) //Cache o
 		if("analyzeClientData")
 			data = analyzeClientData(arglist(params))
 
-		if("swaptodarkmode")
-			swaptodarkmode()
-
-		if("swaptolightmode")
-			swaptolightmode()
-
 	if(data)
 		ehjax_send(data = data)
 
@@ -286,11 +280,5 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("data/tmp/iconCache.sav")) //Cache o
 		to_chat_immediate(target, message, handle_whitespace, trailing_newline)
 		return
 	SSchat.queue(target, message, handle_whitespace, trailing_newline)
-
-/datum/chatOutput/proc/swaptolightmode() //Dark mode light mode stuff. Yell at KMC if this breaks! (See darkmode.dm for documentation)
-	owner.force_white_theme()
-
-/datum/chatOutput/proc/swaptodarkmode()
-	owner.force_dark_theme()
 
 #undef MAX_COOKIE_LENGTH

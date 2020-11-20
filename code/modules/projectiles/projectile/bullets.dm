@@ -193,6 +193,12 @@
 	penetrating = 1
 	distance_falloff = 1.5
 
+/obj/item/projectile/bullet/rifle/longcolt
+	fire_sound = 'sound/weapons/gunshot/winchestershot.ogg'
+	damage = 60
+	armor_penetration = 5
+	distance_falloff = 2
+
 /obj/item/projectile/bullet/rifle/military
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 40

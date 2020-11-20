@@ -131,6 +131,13 @@
 	icon_state = "riflecasing"
 	spent_icon = "riflecasing-spent"
 
+/obj/item/ammo_casing/rifle/winchester
+	desc = "A winchester bullet casing."
+	caliber = CALIBER_LONGCOLT
+	projectile_type = /obj/item/projectile/bullet/rifle/longcolt
+	icon_state = "riflecasing"
+	spent_icon = "riflecasing-spent"
+
 /obj/item/ammo_casing/shell
 	name = "shell casing"
 	desc = "An antimaterial shell casing."

@@ -53,6 +53,40 @@
 
 	update_icon()
 
+
+
+
+
+/obj/item/weapon/gun/projectile/shotgun/pump/winchester
+	name = "Winchester M1894"
+	desc = "A sawed-off custom version of a rifle manufactured during the golden age of Winchesters. To match with the Family Heads personal preferences, it was made to handle .45 Long Colt rounds."
+	icon = 'icons/obj/guns/shotguns.dmi'
+	icon_state = "maresleg"
+	item_state = "maresleg"
+	caliber = CALIBER_LONGCOLT
+	max_shells = 5
+	w_class = ITEM_SIZE_NORMAL
+	load_method = SINGLE_CASING
+	ammo_type = /obj/item/ammo_casing/rifle/winchester
+	force = 5
+	one_hand_penalty = 3
+	bulk = 2
+	load_sound = "/sound/weapons/guns/interaction/rifle_load.ogg"
+
+/obj/item/weapon/gun/projectile/shotgun/winchester/pump/proc/pump(mob/M as mob)
+	playsound(M, 'sound/weapons/leveraction_pump.ogg', 60, 1)
+
+	if(chambered)//We have a shell in the chamber
+		chambered.dropInto(loc)//Eject casing
+		if(LAZYLEN(chambered.fall_sounds))
+			playsound(loc, pick(chambered.fall_sounds), 50, 1)
+		chambered = null
+
+
+
+
+
+
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
 	name = "combat shotgun"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
