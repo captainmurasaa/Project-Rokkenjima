@@ -78,7 +78,6 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"Absconditus" = /music_track/absconditus,
 	"As Far As It Gets" = /music_track/asfarasitgets,
 	"Asteroids" = /music_track/df_theme,
-	"Beyond" = /music_track/ambispace,
 	"Clouds of Fire" = /music_track/clouds_of_fire,
 	"Comet Halley" = /music_track/comet_haley,
 	"Endless Space" = /music_track/endless_space,
@@ -91,7 +90,6 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"lasers rip apart the bulkhead" = /music_track/lasers,
 	"Marhaba" = /music_track/marhaba,
 	"Martian Cowboy" = /music_track/martiancowboy,
-	"Maschine Klash" = /music_track/digit_one,
 	"Memories of Lysendraa" = /music_track/lysendraa,
 	"Misanthropic Corridors" = /music_track/misanthropic_corridors,
 	"Monument" = /music_track/monument,
@@ -110,6 +108,8 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"Voidsent" = /music_track/voidsent,
 	"Wake" = /music_track/wake,
 	"Wild Encounters" = /music_track/wildencounters,
+	"Rose" = /music_track/rose,
+	"Novelette" = /music_track/novelette,
 ))
 
 /proc/setup_music_tracks(var/list/tracks)
